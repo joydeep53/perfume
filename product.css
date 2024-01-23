@@ -1,0 +1,23 @@
+.product-banner{
+    height: 400px;
+    width: 100%;
+}
+.container{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+.product-banner-content{
+    height: 400px;
+    width: 100%;
+    background-image: url(./images/default-header-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-banner-content .heading{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}

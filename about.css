@@ -1,0 +1,87 @@
+.about-banner{
+    height: 500px;
+    width: 100%;
+}
+.container{
+   padding-left: 200px;
+   padding-right: 200px;
+}
+.about-banner-content{
+    height: 500px;
+    width: 100%;
+    background-image: url(./images/default-header-img.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-banner-content .heading{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+
+/* feature */
+    .about-feature{
+       
+        margin-top: 100px;
+    }
+   
+
+/* ex small */
+@media(max-width:575.98px){
+    .about-banner{
+        height: 500px;
+    }
+    .about-banner-content .heading{
+        font-size: 50px;
+    }
+    .footer{
+        height: auto;
+        
+    }
+    .feature{
+        padding-top: 150px;
+    }
+}
+/* small */
+@media (min-width:576px)and (max-width:767.98px){
+  
+    .about-banner-content .heading{
+        font-size: 50px;
+    }
+    .about-footer{
+        height: auto;
+        
+    }
+    .feature{
+        padding-top: 150px;
+    }
+}
+/* medium */
+@media(min-width:768px)and (max-width:991.98px){
+    .about-banner-content .heading{
+        font-size: 50px;
+    }
+    .footer{
+        height: auto;
+        
+    }
+    .feature{
+        padding-top: 150px;
+    }
+}
+/* lg */
+@media(min-width:992px)and(max-width:1199.98px){
+    .about-banner-content .heading{
+        font-size: 50px;
+    }
+    .footer{
+        height: auto;
+        
+    }
+    .feature{
+        padding-top: 150px;
+    }
+}
