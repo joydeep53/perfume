@@ -14,6 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Teko:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="about.css">
 <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 
 
@@ -34,14 +36,15 @@
                     <li class="links"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
     
               </ul>
-              <i class="fa-solid fa-bars toggle"></i>
-              <i class="fa-solid fa-xmark xmark"></i>
-    
+             
     
                 
          </div>
          </div>
         </nav>
+        <i class="fa-solid fa-bars toggle"></i>
+        <i class="fa-solid fa-xmark xmark"></i>
+
         
         <section class="about-banner">
                 <div class="about-banner-content">
@@ -238,8 +241,39 @@
               
             </div>
           </footer>
-    
 
+
+
+    
+          <script>
+                             $(document).ready(function(){
+        let x = calcDocWidth()
+        if (x>1199){
+            $(".section-nav").slideDown()
+        }
+        else {
+            $(".section-nav").slideUp()
+
+        }
+       
+        $(".xmark").hide()
+        $(".toggle").click(function(){
+            $(".section-nav").slideDown()
+            $(".xmark").fadeIn()
+            $(".toggle").fadeOut()
+        })
+        $(".xmark").click(function(){
+            $(".section-nav").slideUp()
+            $(".toggle").fadeIn()
+            $(".xmark").fadeOut()
+        })
+    })
+    let calcDocWidth = function(){
+        let docwidth= $( window ).width();
+        console.log(docwidth)
+        return docwidth
+    }
+          </script>
   
 
     
