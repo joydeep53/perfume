@@ -68,9 +68,9 @@ header{
 .toggle{
     visibility: hidden;
     position: absolute;
-    top:30px;
+    top:20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -995,7 +995,7 @@ header{
 /* xmark */
 
 .xmark{
-    visibility: hidden;
+   visibility: hidden;
     position: absolute;
     top:15px;
     right: 15px;
@@ -1004,7 +1004,10 @@ header{
 }
 /* ex-small */
 @media (max-width:575.98px){
-   
+    
+   .xmark{
+    visibility: visible;
+   }
     
     html{
         font-size: 10px;
@@ -1432,6 +1435,9 @@ header{
 
 /* small */
 @media (min-width:576px)and (max-width:767.98px){
+    .xmark{
+        visibility: visible;
+       }
     html{
         font-size: 15px;
     }
@@ -1900,6 +1906,9 @@ header{
 
 /* medium */
 @media (min-width:768px)and (max-width:991.98px){
+    .xmark{
+        visibility: visible;
+       }
 
     html{
         font-size: 15px;
@@ -2369,6 +2378,9 @@ header{
 
 /* large */
 @media(min-width:992px) and (max-width:1199.98px){
+    .xmark{
+        visibility: visible;
+       }
 
 
     html{
